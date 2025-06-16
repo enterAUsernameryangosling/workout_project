@@ -6,20 +6,83 @@
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-    <section class="bg-[url('../images/background.png')] bg-top bg-cover w-full h-[750px]">
-        <header>
-            <h1>LOGO</h1>
-            <div class="flex flex-row gap-x-20 items-center text-neutral-50">
+<body class="bg-neutral-900">
+
+    <!-- ============ HERO SECTION ============ -->
+
+    <section class="h-screen flex flex-col">
+        <header class="bg-[url('./images/header-linear-bg.png')] bg-center bg-cover px-[260px] py-4 flex justify-between items-center">
+            <img src="./images/Logo.png">
+            <div class="flex flex-row gap-x-20 items-center text-neutral-300 font-bold uppercase">
                 <p>About</p>
                 <p>Contact us</p>
                 <p>Information</p>
-                <button class="px-5 py-4">ENG</button>
+                <button class="px-5 py-4 flex flex-row gap-x-2 bg-neutral-50 rounded-4xl">
+                    <p class="text-neutral-900">ENG</p>
+                    <img src="./images/arrow-select.png" class="object-contain">
+                </button>
             </div>
         </header>
 
-        <div>
-            <h1 class="">Hello world</h1>
+        <!-- ============ MAIN SECTION ============ -->
+
+        <div class="px-[260px] bg-[url('./images/black_paint_background.jpg')] bg-center bg-cover flex flex-grow flex-shrink basis-auto flex-col justify-between">
+            <div class="flex flex-row justify-between items-center">
+                <div class="flex flex-col gap-y-8">
+                    <div class="flex flex-col gap-y-2.5">
+                        <h2 class="text-orange-500 text-xl font-semibold">Workout Studio Moldova</h4>
+                        <h1 class="text-neutral-50 text-5xl font-bold">Lorem ipsum dolor sit <br> amet consectetur amet</h1>
+                        <p class="text-neutral-400">
+                            Join our groups our get your own individual training session. <br>
+                            Call us and reserve a spot by clicking the button bellow.
+                        </p>
+                    </div>
+                    
+                    <button class="w-fit px-6 py-5 flex flex-row gap-x-2.5 rounded-4xl bg-orange-500">
+                        <img src="./images/phone-icon.png" class="object-contain">
+                        <p class="text-neutral-50 font-bold">Book a session</p> 
+                    </button>
+                </div>
+
+                <div>
+                    <img src="./images/coach.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ SUB SECTION ============ -->
+
+        <div class="bg-[url('./images/grain-bg.png')] h-[350px] px-[260px] py-5 flex-1 flex flex-row gap-x-5">
+            <div class="bg-[url('./images/card1-bg.png')] bg-no-repeat px-10 py-6 flex flex-grow flex-col gap-y-2.5 rounded-3xl">
+                <div>
+                    <h3 class="text-3xl text-neutral-50 font-bold">Looking for a place to train?<br>Join our workout classes!</h3>
+                    <p class="text-base text-neutral-400">Lorem ipsum dolor sit amet consectetur elit.</p>
+                </div>
+
+                <button class="w-fit px-10 py-4 rounded-4xl bg-neutral-50">
+                    <p class="text-neutral-900 font-semibold align-top">Apply</p> 
+                </button>
+            </div>
+
+            <div class="bg-[url('./images/card2-bg.png')] bg-no-repeat w-[340px] flex items-center justify-center">
+                <h2 class="text-neutral-50 text-xl font-bold">
+                    <span class="text-orange-500">[</span> Guided training <span class="text-orange-500">]</span>
+                </h2>
+            </div>
+
+            <div class="bg-[url('./images/card3-bg.png')] bg-no-repeat w-[340px] p-5 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-neutral-50 text-xl font-bold">Timetable & Info</h2>
+                    <p class="text-base text-neutral-400">
+                        Go to the schedule          <br>
+                        information and pick the    <br>
+                        most comfortable time       <br>
+                        for you to train.
+                    </p>
+                </div>
+
+                <p class="text-neutral-50 underline">Learn more</p>
+            </div>
         </div>
     </section>
 </body>
